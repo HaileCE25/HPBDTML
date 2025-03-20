@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Birthday To Babe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="countdownMusic" loop>
+        <source src="music/countdown.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bookMusic" loop>
+        <source src="music/book.mp3" type="audio/mpeg">
+    </audio>    
+    <canvas id="confetti"></canvas>
+    <div class="heartfall"></div>
+    <div class="countdown-container">
+        <div class="time-box">
+            <span id="days">0</span>
+            <p>Days</p>
+        </div>
+        <div class="time-box">
+            <span id="hours">0</span>
+            <p>Hours</p>
+        </div>
+        <div class="time-box">
+            <span id="minutes">0</span>
+            <p>Minutes</p>
+        </div>
+        <div class="time-box">
+            <span id="seconds">0</span>
+            <p>Seconds</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="checkbox-cover">
+    <input type="checkbox" id="checkbox-page1">
+    <input type="checkbox" id="checkbox-page2">
+    <input type="checkbox" id="checkbox-page3">
+    <div class="book">
+        <div class="cover">
+            <label for="checkbox-cover"></label>
+        </div>
+        <div class="page" id="page1">
+            <div class="front-page">
+                <img src="image/p1.jpg">
+                <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+                <img src="image/p2.jpg">
+                <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <div class="front-page">
+                <!-- <h2>Page 2</h2> -->
+                <p1>Chúc em tuổi mới sẽ có nhiều niềm vui hơn, sẽ thật nhiều hạnh phúc cùng với anh ạ! Anh yêu em rất nhiềuu:33</p1>
+                <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+                <img src="image/p3.jpg">
+                <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="front-page">
+                <!-- <h2>Page 3</h2> -->
+                <p1>"Số 1" chúc chị iu sinh nhật zui zẻ nhé ạa :33 Nhiều thiệt nhiều hạnh phúc khi cóa elm nhée</p1>
+            </div>
+        </div>
+        <div class="back-cover"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
+</body>
+</html>
